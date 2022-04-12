@@ -7,4 +7,9 @@ export default [
     element: lazy(() => import("../views/plan/index")),
     exact: true,
   },
+  {
+    path: "/",
+    element: lazy(() => import("../views/index")),
+    exact: true,
+  },
 ];
