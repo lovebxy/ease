@@ -3,12 +3,11 @@ import { Layout, Menu } from 'antd';
 import {
   UserOutlined,
   VideoCameraOutlined,
-  UploadOutlined,
 } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 
 
-const { Sider, Footer, Content } = Layout;
+const { Sider, Footer, Content, Header } = Layout;
 
 const SiderBar = ({ children } : { children: React.ReactElement}) => {
   const history = useNavigate();
@@ -24,7 +23,7 @@ const SiderBar = ({ children } : { children: React.ReactElement}) => {
           </Menu.Item>
         </Menu>
       </Sider>
-      <Content>
+      <Content style={{ padding: 20 }}>
         {children}
       </Content>
     </Layout>

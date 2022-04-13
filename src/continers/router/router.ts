@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { lazy } from "react";
 
 export default [
@@ -9,7 +8,7 @@ export default [
   },
   {
     path: "/",
-    element: lazy(() => import("../views/index")),
+    element: lazy(() => import("../views/Index/index")),
     exact: true,
   },
 ];
